@@ -1,6 +1,6 @@
 # Laravel Drag and Drop menu editor like wordpress
 
-## This is a form of the following package: https://github.com/harimayco/wmenu-builder
+## This is a fork of the following package: https://github.com/harimayco/wmenu-builder
 
 [![Latest Stable Version](https://poser.pugx.org/harimayco/laravel-menu/v/stable)](https://packagist.org/packages/harimayco/laravel-menu) [![Latest Unstable Version](https://poser.pugx.org/harimayco/laravel-menu/v/unstable)](https://packagist.org/packages/harimayco/laravel-menu) [![Total Downloads](https://poser.pugx.org/harimayco/laravel-menu/downloads)](https://packagist.org/packages/harimayco/laravel-menu) [![Monthly Downloads](https://poser.pugx.org/harimayco/laravel-menu/d/monthly)](https://packagist.org/packages/harimayco/laravel-menu)
 
