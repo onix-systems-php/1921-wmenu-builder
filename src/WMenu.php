@@ -86,17 +86,21 @@ class WMenu
     {
         $data_arr = array();
         $i = 0;
-        foreach ($items as $item) {
-            $data_arr[$i] = $item->toArray();
-            $find = $all_items->where('parent', $item->id);
+        if($items->count()) {
+            foreach ($items as $item) {
+                $data_arr[$i] = $item->toArray();
+                $find = $all_items->where('parent', $item->id);
 
-            $data_arr[$i]['child'] = array();
+                $data_arr[$i]['child'] = array();
 
-            if ($find->count()) {
-                $data_arr[$i]['child'] = self::tree($find, $all_items);
+                if ($find->count()) {
+                    $data_arr[$i]['child'] = self::tree($find, $all_items);
+                }
+
+                $i++;
             }
-
-            $i++;
+        } else {
+            $data_arr[$i]['child'] = $all_items;
         }
 
         return $data_arr;
